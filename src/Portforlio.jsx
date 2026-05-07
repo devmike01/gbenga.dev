@@ -1,9 +1,43 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import TestimonialCard from "./TestimonialCard";
 import ProjectCard from "./ProjectCard";
+import confetti from "canvas-confetti";
+
+const CONVERSION_MONTH = 4; // June (0-based index: Jan = 0)
+const CONVERSION_DAY = 7;
+
+const launchConfetti = () => {
+    const duration = 3 * 1000;
+    const end = Date.now() + duration;
+
+    const frame = () => {
+        confetti({
+            particleCount: 5,
+            spread: 80,
+            origin: { y: 0.6 },
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    };
+
+    frame();
+};
 
 export default function Portfolio() {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    useEffect(() => {
+        const today = new Date();
+
+        const isSameDay =
+            today.getMonth() === CONVERSION_MONTH &&
+            today.getDate() === CONVERSION_DAY;
+
+        if (isSameDay) {
+            launchConfetti();
+        }
+    }, []);
 
     const handleSubmit = (e) => {
         e.preventDefault();
