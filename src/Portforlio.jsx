@@ -195,19 +195,19 @@ export default function Portfolio() {
                             title="InaRead"
                             description="A mobile app that helps you understand your electricity meter readings, track shared usage, and reduce energy costs."
                             tags={["Springboot", "Android"]}
-                            link="#"
+                            link="https://play.google.com/store/apps/details?id=dev.gbenga.inaread"
                         />
                         <ProjectCard
                             title="PageStepIndicator"
                             description="A highly customizable step indicator UI library with support for titles, labels, progress states, and flexible styling options — designed to create smooth and intuitive multi-step user experiences."
-                            tags={["Rust", "WebSockets", "Docker"]}
-                            link="#"
+                            tags={["Android", "Android SDK", "Kotlin"]}
+                            link="https://github.com/devmike01/PageStepIndicator"
                         />
                         <ProjectCard
                             title="JadeSharedPreference"
                             description="A light weight library which uses annotation processing to generate codes that let you read and write to SharedPreferences file on Android"
-                            tags={["Go", "OAuth2", "gRPC"]}
-                            link="#"
+                            tags={["Android", "Storage", "Kotlin"]}
+                            link="https://github.com/devmike01/JadeSharedPreference"
                         />
                     </div>
                 </div>
