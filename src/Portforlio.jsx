@@ -26,15 +26,20 @@ export default function Portfolio() {
             role: "Sr. SWE, Salacia Solutions"
         },
         {
-            quote: "Under Gbenga's expert and patient guidance, I feel myself growing from a novice to a confident coder.",
-            author: "Keefe Dashiell",
-            role: "Senior Developer, Stripe"
+            quote: "Gbenga was very helpful!! He was able to help us troubleshoot bugs quickly and taught us a lot. Looking forward to another session with him!",
+            author: "Alex Chisholm",
+            role: "Client, Codementor"
         },
         {
             quote: "Gbenga helped me to refactor my code. He was really fast to solve the issues and learned more about Android and how to implement correctly compose with my code since it was my first time using it in my project. I totally recommend him. He is the best!",
             author: "Jenny Cárdenas",
             role: "Frontend Engineer, Globant"
-        } // Jenny Cárdenas
+        },
+        {
+            quote: "Gbenga is smart, clear, honest, and generous. He helped me write more reliable code and understand that there was a better technical approach to achieving my goals with the overall Android app being built. ",
+            author: "Rolando Brown",
+            role: "Client, Codementor"
+        }
     ];
 
     const socialMedia = {
@@ -100,7 +105,10 @@ export default function Portfolio() {
                         {/* CTA & Socials Row */}
                         {/* CTA & Socials Row */}
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 pt-4">
-                            <button className="group relative px-10 py-5 bg-white text-slate-950 font-bold rounded-2xl transition-all hover:bg-emerald-400 active:scale-95 overflow-hidden shadow-2xl shadow-emerald-500/10">
+                            <button className="group relative px-10 py-5 bg-white text-slate-950 font-bold rounded-2xl transition-all hover:bg-emerald-400 active:scale-95 overflow-hidden shadow-2xl shadow-emerald-500/10"
+                            onClick={() => {
+                                window.location.href = '#contact';
+                            }}>
                                 <span className="relative z-10 text-lg">Work With Me</span>
                             </button>
 
