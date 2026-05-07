@@ -220,14 +220,14 @@ export default function Portfolio() {
                         <div className="space-y-4">
                             <div className="flex items-center gap-2">
                                 <div className="h-[1px] w-8 bg-emerald-500"></div>
-                                <span className="text-emerald-400 font-mono text-xs font-bold tracking-[0.3em] uppercase">Archive 2024-2026</span>
+                                <span className="text-emerald-400 font-mono text-xs font-bold tracking-[0.3em] uppercase">Archive 2022-2026</span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-white leading-none">
                                 Selected <span className="text-slate-500">Works.</span>
                             </h2>
                         </div>
                         <p className="text-slate-400 max-w-xs text-sm leading-relaxed border-l border-slate-800 pl-6">
-                            Engineering-focused solutions ranging from <span className="text-slate-200">offline payment authentication</span> to enterprise-grade security SDKs.
+                            Engineering-focused solutions ranging from <span className="text-slate-200">offline payment infrastructure</span> to enterprise-grade security SDKs.
                         </p>
                     </div>
 
@@ -236,7 +236,7 @@ export default function Portfolio() {
                         <ProjectCard
                             title="InaRead"
                             description="A mobile app that helps you understand your electricity meter readings, track shared usage, and reduce energy costs."
-                            tags={["Springboot", "Android"]}
+                            tags={["Springboot", "Android", "Architecture"]}
                             link="https://play.google.com/store/apps/details?id=dev.gbenga.inaread"
                         />
                         <ProjectCard
@@ -248,7 +248,7 @@ export default function Portfolio() {
                         <ProjectCard
                             title="JadeSharedPreference"
                             description="A light weight library which uses annotation processing to generate codes that let you read and write to SharedPreferences file on Android"
-                            tags={["Android", "Storage", "Kotlin"]}
+                            tags={["Android", "Android SDK", "Kotlin"]}
                             link="https://github.com/devmike01/JadeSharedPreference"
                         />
                     </div>
